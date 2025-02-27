@@ -8,13 +8,41 @@
 
         char cidade = 'A';
         char codigo;
-        float area;
-        float populacao;
-        int pontos;
-        float pib;
-        float densidade;
-        float percapta;
 
+        float area1;
+        float area2;
+        float area3;
+        float area4;
+
+        float populacao1;
+        float populacao2;
+        float populacao3;
+        float populacao4;
+
+        int pontos1;
+        int pontos2;
+        int pontos3;
+        int pontos4;
+
+        float pib1;
+        float pib2;
+        float pib3;
+        float pib4;
+
+        float densidade1;
+        float densidade2;
+        float densidade3;
+        float densidade4;
+
+        float percapta1;
+        float percapta2;
+        float percapta3;
+        float percapta4;
+
+        float ultimate1;
+        float ultimate2;
+        float ultimate3;
+        float ultimate4;
 
         int opcao1 = 1;
         int opcao2 = 2;
@@ -26,26 +54,26 @@
         printf("Escolha um País: \n");
         scanf("%s", &pais);
 
-        printf("Escolha um Estado(*SIGLA*): \n");
+        printf("Escolha um Estado(*SIGLA*)(Codigo:A): \n");
         scanf(" %s", &estado);
 
-        printf("Escolha uma Cidade: \n");
+        printf("Escolha uma Cidade(Codigo:01): \n");
         scanf("%s", &cidade );
 
             printf("Digite o Código (a combinacão do Estado com a Cidade): \n");
             scanf(" %s", &codigo);       
            
             printf("Digite a População Total: \n");
-            scanf(" %f", &populacao);
+            scanf(" %f", &populacao1);
 
             printf("Digite a Área: \n");
-            scanf("%f", &area);
+            scanf("%f", &area1);
             
             printf("Digite o PIB: \n");
-            scanf(" %f", &pib);
+            scanf(" %f", &pib1);
             
             printf("Digite os Pontos Turisticos: \n");
-            scanf(" %d", &pontos);
+            scanf(" %d", &pontos1);
 
 printf("\n");
             
@@ -54,21 +82,93 @@ printf("\n");
             
 printf("\n");
             printf("Código:A0%d\n", opcao1);
-            printf("Populacão: %.0f\n", populacao);
-            printf("Área: %.0fKM²\n ", area);
-            printf("PIB:R$%.0f\n ", pib);
-            printf("Pontos Turísticos: %d\n", pontos);
+            printf("Populacão: %.0f\n", populacao1);
+            printf("Área: %.0fKM²\n ", area1);
+            printf("PIB:R$%.0f\n ", pib1);
+            printf("Pontos Turísticos: %d\n", pontos1);
 
-            densidade = (float)(populacao / area);
-            percapta = (float)(pib / populacao);
+            densidade1 = (float)(populacao1 / area1);
+            percapta1 = (float)(pib1 / populacao1);
 
-            printf("Densidade Populacional:%.0f Habitante por M²\n", densidade);
-            printf("PIB per CAPTA:%.3f\n", percapta);
+            printf("Densidade Populacional:%.2f Habitante por M²\n", densidade1);
+            printf("PIB per CAPTA:%.3f\n", percapta1);
+
+            
+            ultimate1 = (int)(populacao1 + area1 + pib1 + pontos1);
+            printf("Ultimate: %.0f\n", ultimate1);
+
 printf("\n");
 
-return 0;
-    }
+printf("Carta: 02\n");
+
+printf("Escolha uma Cidade(Codigo:02): \n");
+scanf("%s", &cidade );
+
+    printf("Digite o Código (a combinacão do Estado com a Cidade): \n");
+    scanf(" %s", &codigo);       
+   
+    printf("Digite a População Total: \n");
+    scanf(" %f", &populacao2);
+
+    printf("Digite a Área: \n");
+    scanf("%f", &area2);
     
+    printf("Digite o PIB: \n");
+    scanf(" %f", &pib2);
+    
+    printf("Digite os Pontos Turisticos: \n");
+    scanf(" %d", &pontos2);
+
+
+printf("\n");
+    
+
+    printf("Carta:0%d\n" , opcao2);
+    
+printf("\n");
+    printf("Código:A0%d\n", opcao2);
+    printf("Populacão: %.0f\n", populacao2);
+    printf("Área: %.0fKM²\n ", area2);
+    printf("PIB:R$%.0f\n ", pib2);
+    printf("Pontos Turísticos: %d\n", pontos2);
+
+    densidade2 = (float)(populacao2 / area2);
+    percapta2 = (float)(pib2 / populacao2);
+
+    printf("Densidade Populacional:%.2f Habitante por M²\n", densidade2);
+    printf("PIB per CAPTA:%.3f\n", percapta2);
+
+    
+    ultimate2 = (int)(populacao2 + area2 + pib2 + pontos2);
+        printf("Ultimate: %.0f\n", ultimate2);
+
+
+printf("\n");
+    
+
+    
+
+    printf("Teste de combate:\n");
+    printf("Se o resultado for 1 a primeira carta vence!!\n");
+    printf("Se o resultado for 0 a segunda carta vence!!\n");
+
+    printf("\n");
+
+printf("RESULTADO:\n");
+
+    printf("Comparacao Populacão: %d\n", populacao1 > populacao2 );
+    printf("Comparacao Área: %d\n", area1 > area2 );
+    printf("Comparacao Pib: %d\n", pib1 > pib2 );
+    printf("Comparacao Pontos Turísticos: %d\n", pontos1 > pontos2 );
+    printf("Comparacao Desnsidade Populacional: %d\n", densidade1 < densidade2 );  
+    printf("Comparacao PIB per CAPTA: %d\n", percapta1 > percapta2 );
+    printf("Comparacao Ultimate: %d\n", ultimate1 > ultimate2);
+
+return 0;
+ }
+    
+      
+
       
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
