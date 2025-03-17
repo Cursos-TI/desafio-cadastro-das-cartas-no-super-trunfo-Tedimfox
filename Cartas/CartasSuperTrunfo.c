@@ -2,52 +2,24 @@
 
     int main(){
 
-        
-        char estado;
         char pais;
 
-        char cidade = 'A';
+        char estado;     
+        char cidade1, cidade2;
         char codigo;
 
-        float area1;
-        float area2;
-        float area3;
-        float area4;
+        float area1, area2, area3, area4;
+        float populacao1, populacao2, populacao3, populacao4;
+        int pontos1, pontos2, pontos3, pontos4;
+        float pib1, pib2, pib3, pib4;
 
-        float populacao1;
-        float populacao2;
-        float populacao3;
-        float populacao4;
 
-        int pontos1;
-        int pontos2;
-        int pontos3;
-        int pontos4;
 
-        float pib1;
-        float pib2;
-        float pib3;
-        float pib4;
-
-        float densidade1;
-        float densidade2;
-        float densidade3;
-        float densidade4;
-
-        float percapta1;
-        float percapta2;
-        float percapta3;
-        float percapta4;
-
-        float ultimate1;
-        float ultimate2;
-        float ultimate3;
-        float ultimate4;
-
-        int opcao1 = 1;
-        int opcao2 = 2;
-        int opcao3 = 3;
-        int opcao4 = 4;
+        float densidade1, densidade2, densidade3, densidade4;
+        float percapta1, percapta2, percapta3, percapta4;
+        float ultimate1, ultimate2, ultimate3, ultimate4;
+        int opcao1 = 1, opcao2 = 2, opcao3 = 3, opcao4 = 4;
+        
 
         printf("Super Trunfo! (PAÍSES) \n ");
 
@@ -58,7 +30,7 @@
         scanf(" %s", &estado);
 
         printf("Escolha uma Cidade(Codigo:01): \n");
-        scanf("%s", &cidade );
+        scanf("%s", &cidade1 );
 
             printf("Digite o Código (a combinacão do Estado com a Cidade): \n");
             scanf(" %s", &codigo);       
@@ -102,7 +74,7 @@ printf("\n");
 printf("Carta: 02\n");
 
 printf("Escolha uma Cidade(Codigo:02): \n");
-scanf("%s", &cidade );
+scanf("%s", &cidade2 );
 
     printf("Digite o Código (a combinacão do Estado com a Cidade): \n");
     scanf(" %s", &codigo);       
@@ -149,25 +121,44 @@ printf("\n");
     
 
     printf("Teste de combate:\n");
-    printf("Se o resultado for 1 a primeira carta vence!!\n");
-    printf("Se o resultado for 0 a segunda carta vence!!\n");
+    //printf("Se o resultado for 1 a primeira carta vence!!\n");
+    //printf("Se o resultado for 0 a segunda carta vence!!\n");
 
     printf("\n");
 
-printf("RESULTADO:\n");
+//printf("RESULTADO:\n");
 
-    printf("Comparacao Populacão: %d\n", populacao1 > populacao2 );
-    printf("Comparacao Área: %d\n", area1 > area2 );
-    printf("Comparacao Pib: %d\n", pib1 > pib2 );
-    printf("Comparacao Pontos Turísticos: %d\n", pontos1 > pontos2 );
-    printf("Comparacao Desnsidade Populacional: %d\n", densidade1 < densidade2 );  
-    printf("Comparacao PIB per CAPTA: %d\n", percapta1 > percapta2 );
-    printf("Comparacao Ultimate: %d\n", ultimate1 > ultimate2);
+    //printf("Comparacao Populacão: %d\n", populacao1 > populacao2 );
+   // printf("Comparacao Área: %d\n", area1 > area2 );
+   // printf("Comparacao Pib: %d\n", pib1 > pib2 );
+   // printf("Comparacao Pontos Turísticos: %d\n", pontos1 > pontos2 );
+   // printf("Comparacao Desnsidade Populacional: %d\n", densidade1 < densidade2 );  
+  //  printf("Comparacao PIB per CAPTA: %d\n", percapta1 > percapta2 );
+  //  printf("Comparacao Ultimate: %d\n", ultimate1 > ultimate2);
 
+   // printf("\n");
+        printf("Comparação de cartas(Atributo:População):\n");
+       
+        printf("Carta 1 - Vitória: 322.869\n");
+        
+        printf("Carta 2 - Aracruz: 94.765\n");
+
+    printf("Resultado:\n");
+    
+    if (populacao1 > populacao2){
+        printf("Carta 1 Venceu!\n");
+    } else{
+        printf("Carta 2 Venceu!\n");
+    }
+
+
+
+    
 return 0;
  }
     
       
+
 
       
 // Desafio Super Trunfo - Países
