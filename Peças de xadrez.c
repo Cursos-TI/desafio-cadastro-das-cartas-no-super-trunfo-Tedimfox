@@ -58,7 +58,7 @@
 
 
 void torre(int casas){
-    if(casas > 1){
+    if(casas > 0){
         torre(casas - 1);
         printf("Direita \n");
     }
